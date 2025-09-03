@@ -35,16 +35,16 @@ export const deleteStudent = createAsyncThunk(
   }
 );
 
-const initialState = {
-  loading: false,
-  error: null,
-  sort: "name",
-  filter: "All"
-}
 
 export const studentSlice = createSlice({
   name: 'student',
-  initialState,
+  initialState: {
+    items:[],
+    loading: false,
+    error: null,
+    sort: "name",
+    filter: "All"
+  },
   reducers: {
     sorting: (state, action) => {
       state.sort = action.payload;

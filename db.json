@@ -1,64 +1,34 @@
 {
-   "Student": [
-     {
-    "id": 1,
-    "name": "Aarav Mehta",
-    "roll_number": "101",
-    "class": "10A"
-  },
-  {
-    "id": 2,
-    "name": "Riya Sharma",
-    "roll_number": "102",
-    "class": "10A"
-  },
-  {
-    "id": 3,
-    "name": "Kabir Patel",
-    "roll_number": "103",
-    "class": "10A"
-  },
-  {
-    "id": 4,
-    "name": "Ananya Verma",
-    "roll_number": "104",
-    "class": "10A"
-  },
-  {
-    "id": 5,
-    "name": "Vihaan Singh",
-    "roll_number": "105",
-    "class": "10A"
-  },
-  {
-    "id": 6,
-    "name": "Ishita Desai",
-    "roll_number": "106",
-    "class": "10A"
-  },
-  {
-    "id": 7,
-    "name": "Devansh Nair",
-    "roll_number": "107",
-    "class": "10A"
-  },
-  {
-    "id": 8,
-    "name": "Meera Iyer",
-    "roll_number": "108",
-    "class": "10A"
-  },
-  {
-    "id": 9,
-    "name": "Aryan Kapoor",
-    "roll_number": "109",
-    "class": "10A"
-  },
-  {
-    "id": 10,
-    "name": "Simran Kaur",
-    "roll_number": "110",
-    "class": "10A"
-  }
-]
+  "Student": [
+    {
+      "id": "2",
+      "name": "Riya Sharma",
+      "roll_number": "102",
+      "class": "10A"
+    },
+    {
+      "id": "3",
+      "name": "Kabir Patel",
+      "roll_number": "103",
+      "class": "10A"
+    },
+    {
+      "id": "5",
+      "name": "Vihaan Singh",
+      "roll_number": "105",
+      "class": "10A"
+    },
+    {
+      "id": "8",
+      "name": "Meera Iyer",
+      "roll_number": "108",
+      "class": "10A"
+    },
+    {
+      "id": "10",
+      "name": "Simran Kaur",
+      "roll_number": "110",
+      "class": "10A"
+    }
+  ]
 }

@@ -1,6 +1,6 @@
 import React from 'react'
-import StudentList from './components/StudentList'
 import { Route, Routes } from 'react-router'
+import StudentList from './components/StudentList'
 import StudentForm from './components/StudentForm'
 import StudentDetails from './components/StudentDetails'
 import Login from './page/Login'
@@ -11,15 +11,12 @@ const App = () => {
   return (
     <div>
       <Navbar/>
-      <div>
       <Routes>
-        <Route path='/login' element={<Login/>}/>
-        <Route path='/' element={<StudentList/>}/>
-        <Route path='/add' element={ <PrivateRoute> <StudentForm/> </PrivateRoute>}/>
-        <Route path='/student/:id' element={<StudentDetails/>}/>
-        <Route path=''/>
+        <Route path="/login" element={<Login/>}/>
+        <Route path="/" element={<StudentList/>}/>
+        <Route path="/add" element={<PrivateRoute><StudentForm/></PrivateRoute>}/>
+        <Route path="/student/:id" element={<StudentDetails/>}/>
       </Routes>
-      </div>
     </div>
   )
 }

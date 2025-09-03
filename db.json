@@ -3,7 +3,6 @@
     {
       "id": "2",
       "name": "Riya Sharma",
-      "roll_number": "102",
       "class": "10A",
       "roll_no": "21"
     },
@@ -34,15 +33,32 @@
     {
       "id": "5352",
       "name": "Happy",
-      "roll": "23",
       "class": "12B",
       "roll_no": "234"
     },
     {
       "id": "d88f",
       "name": "Param Shah",
-      "roll": "44",
-      "class": "10A"
+      "class": "10A",
+      "roll_no": "44"
+    },
+    {
+      "id": "7b07",
+      "name": "Arshil",
+      "class": "10A",
+      "roll_no": "14"
+    },
+    {
+      "id": "6a4b",
+      "name": "Devendra",
+      "class": "10A",
+      "roll_no": "10"
+    },
+    {
+      "id": "8e6a",
+      "name": "Ram",
+      "class": "12B",
+      "roll_no": "100"
     }
   ]
 }

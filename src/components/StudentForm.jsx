@@ -4,7 +4,7 @@ import { addStudent } from "../redux/feature/studentSlice";
 import { useNavigate } from "react-router";
 
 const StudentForm = () => {
-  const [form, setForm] = useState({ name: "", roll: "", class: "" });
+  const [form, setForm] = useState({ name: "", roll_no: "", class: "" });
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -20,9 +20,9 @@ const StudentForm = () => {
     <div className="p-6 max-w-md mx-auto">
       <h2 className="text-2xl font-bold mb-4">Add Student</h2>
       <form onSubmit={handleSubmit} className="space-y-3">
-        <input type="text" name="name" placeholder="Name" value={form.name} onChange={handleChange} className="w-full p-2 border rounded" required />
-        <input type="text" name="roll" placeholder="Roll Number" value={form.roll} onChange={handleChange} className="w-full p-2 border rounded" required />
-        <input type="text" name="class" placeholder="Class" value={form.class} onChange={handleChange} className="w-full p-2 border rounded" required />
+        <input type="text" placeholder="Name" value={form.name} onChange={handleChange} className="w-full p-2 border rounded" required />
+        <input type="text" placeholder="Roll Number" value={form.roll_no} onChange={handleChange} className="w-full p-2 border rounded" required />
+        <input type="text" placeholder="Class" value={form.class} onChange={handleChange} className="w-full p-2 border rounded" required />
         <button type="submit" className="bg-green-600 text-white px-4 py-2 rounded">Add</button>
       </form>
     </div>

@@ -56,9 +56,9 @@ const StudentList = () => {
           className="p-2 border rounded" >
 
           <option value="All">All Classes</option>
-          {[...new Set(items.map((s) => s.class))].map((cls) => (
-            <option key={cls} value={cls}>
-              {cls}
+          {[...new Set(items.map((s) => s.class))].map((filter) => (
+            <option key={filter} value={filter}>
+              {filter}
             </option>
           ))}
         </select>
@@ -72,14 +72,11 @@ const StudentList = () => {
 
             {editId === student.id ? (
               <div className="flex-1 flex space-x-2">
-                <input type="text"
-                  name="name" value={editForm.name} onChange={handleChange}
+                <input type="text" value={editForm.name} onChange={handleChange}
                   className="border p-1 rounded w-1/3" />
-                <input type="text"
-                  name="roll_no" value={editForm.roll_no} onChange={handleChange}
+                <input type="text" value={editForm.roll_no} onChange={handleChange}
                   className="border p-1 rounded w-1/3"/>
-                <input type="text"
-                  name="class" value={editForm.class} onChange={handleChange}
+                <input type="text" value={editForm.class} onChange={handleChange}
                   className="border p-1 rounded w-1/3" />
               </div>
             ) : (
@@ -90,15 +87,15 @@ const StudentList = () => {
 
             <div className="space-x-2">
               {editId === student.id ? (
-                <button onClick={handleUpdate} className="bg-blue-600 text-white px-3 py-1 rounded">
+                <button onClick={handleUpdate} className="bg-blue-600 text-white px-3 py-1 rounded cursor-pointer">
                   Update
                 </button>
               ) : (
-                <button onClick={() => handleEdit(student)} className="bg-yellow-500 text-white px-3 py-1 rounded">
+                <button onClick={() => handleEdit(student)} className="bg-yellow-500 text-white px-3 py-1 rounded cursor-pointer">
                   Edit
                 </button>
               )}
-              <button onClick={() => dispatch(deleteStudent(student.id))} className="bg-red-600 text-white px-3 py-1 rounded">
+              <button onClick={() => dispatch(deleteStudent(student.id))} className="bg-red-600 text-white px-3 py-1 rounded cursor-pointer">
                 Delete
               </button>
             </div>
